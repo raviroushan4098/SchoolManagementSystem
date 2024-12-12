@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F0F8FF"
+    android:gravity="center"
+    tools:context=".PrincipalDashboardActivity">
+
+    <!-- Welcome Message for Principal -->
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Sir \nthis is your Admin Portal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000080"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button for adding timetable -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddTimetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Timetable"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/school_button_blue"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="12dp"
+        android:textSize="18sp"
+        android:elevation="6dp" />
+
+    <!-- Input field for student registration number -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStudentRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Student Registration Number"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_bg" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button for viewing student details -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewStudentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Student Details"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/school_button_blue"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="12dp"
+        android:textSize="18sp"
+        android:elevation="6dp" />
+
+    <!-- Button for logging out -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="#D32F2F"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="12dp"
+        android:textSize="18sp"
+        android:elevation="6dp" />
+
+</LinearLayout>

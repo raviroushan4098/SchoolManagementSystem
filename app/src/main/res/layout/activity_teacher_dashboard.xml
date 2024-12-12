@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F0F8FF">
+
+    <!-- Teacher's Profile Image -->
+<ImageView
+android:id="@+id/teacherProfileImage"
+android:layout_width="120dp"
+android:layout_height="120dp"
+android:layout_gravity="center"
+android:layout_marginBottom="20dp"
+android:src="@drawable/ic_default_profile_image"
+android:contentDescription="Teacher Profile Image"
+android:scaleType="centerCrop"
+android:elevation="4dp" />
+
+    <!-- CardView for Teacher's Welcome Message -->
+<androidx.cardview.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:cardCornerRadius="12dp"
+app:cardElevation="6dp"
+app:cardBackgroundColor="#FFFFFF"
+android:layout_marginBottom="20dp"
+android:padding="16dp">
+
+<TextView
+    android:id="@+id/teacherName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome, Teacher"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:textColor="#000080"
+    android:gravity="center" />
+
+</androidx.cardview.widget.CardView>
+
+    <!-- Buttons for Teacher Actions -->
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnAddMarks"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+app:cornerRadius="12dp"
+android:backgroundTint="@color/school_button_blue"
+android:fontFamily="sans-serif-medium"
+android:paddingVertical="12dp"
+android:text="Add Marks"
+android:textColor="#FFFFFF"
+android:textSize="18sp" />
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnAddAttendance"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+app:cornerRadius="12dp"
+android:backgroundTint="@color/school_button_blue"
+android:fontFamily="sans-serif-medium"
+android:paddingVertical="12dp"
+android:text="Add Attendance"
+android:textColor="#FFFFFF"
+android:textSize="18sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStudentRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Student Registration Number"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_bg" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button for viewing student details -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewStudentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Student Details"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/school_button_blue"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="12dp"
+        android:textSize="18sp"
+        android:elevation="6dp" />
+
+    <!-- Logout Button -->
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnLogout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+app:cornerRadius="12dp"
+android:backgroundTint="#D32F2F"
+android:fontFamily="sans-serif-medium"
+android:paddingVertical="12dp"
+android:text="Logout"
+android:textColor="#FFFFFF"
+android:textSize="18sp" />
+
+    </LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <!-- Header Section -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtStudentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="@color/black" />
+
+    <!-- CardView for Student Details -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: John Doe"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtStudentClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Class: 10"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtStudentSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Section: A"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtStudentRollNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roll No: 25"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Section Spinner -->
+
+    <!-- Class Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/select_class"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Section"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:prompt="@string/select_section"/>
+
+
+    <!-- Container for adding multiple subjects -->
+    <LinearLayout
+        android:id="@+id/subjectsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to add more subjects -->
+    <Button
+        android:id="@+id/btnAddSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Subject" />
+
+    <!-- Button to save timetable -->
+    <Button
+        android:id="@+id/btnSaveTimetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Timetable"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

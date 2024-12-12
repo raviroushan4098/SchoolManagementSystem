@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="school_button_blue">#1E3A8A</color>
+    <color name="school_button_green">#4CAF50</color>
+    <color name="school_button_yellow">#FFEB3B</color>
+    <color name ="splash_background">#12B8C1</color>
+
+    <color name="light_gray">#F9F9F9</color>
+
+</resources>

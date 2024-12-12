@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner for selecting a section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Section"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spinner for selecting a teacher -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Teacher"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to assign the timetable -->
+    <Button
+        android:id="@+id/btnAssignTimetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Timetable" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner for selecting class -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Class"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spinner for selecting section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Section"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Date selection EditText -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- ListView for displaying students -->
+    <ListView
+        android:id="@+id/studentListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Button to save attendance -->
+    <Button
+        android:id="@+id/btnSaveAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Attendance"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

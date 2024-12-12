@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schoolmanagementsystem">
+    <!-- Permissions for network and storage access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions for accessing files on external storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SchoolManagementSystem">
+        <activity
+            android:name=".TeacherDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AssignTimetableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTimetableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateSectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewTimetableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentMarksActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SchoolManagementSystem" />
+        <activity
+            android:name=".AddAttendanceActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SchoolManagementSystem" />
+        <activity
+            android:name=".AddMarksActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SchoolManagementSystem" />
+        <activity
+            android:name=".TeacherSignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SchoolManagementSystem" />
+        <activity
+            android:name=".StudentSignUpActivity"
+            android:exported="false" /> <!-- Launcher activity (LoginActivity) with android:exported set to true -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" /> <!-- Other activities with android:exported attributes -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDashboardActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

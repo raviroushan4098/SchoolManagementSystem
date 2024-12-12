@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mainlogo"
+    android:contentDescription="Bodhi Academy Logo"
+    android:layout_marginBottom="16dp"
+        android:layout_gravity="center"/>
+
+    <!-- Title/School Name -->
+    <TextView
+        android:id="@+id/tvSchoolName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Bodhi Academy"
+        android:textSize="26sp"
+        android:textColor="#003366"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:paddingBottom="32dp" />
+
+    <!-- CardView for Input Fields -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <!-- Username Input Field -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:background="@android:color/transparent"
+
+                android:drawablePadding="8dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password Input Field -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+
+                android:drawablePadding="8dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:padding="12dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#007BFF"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp"
+    android:padding="12dp" />
+
+    <!-- Student Sign Up Button -->
+    <Button
+        android:id="@+id/btnStudentSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up as Student"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#28A745"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="8dp"
+    android:padding="12dp" />
+
+    <!-- Teacher Sign Up Button -->
+    <Button
+        android:id="@+id/btnTeacherSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up as Teacher"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFC107"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:padding="12dp" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true" />
+</LinearLayout>
